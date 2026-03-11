@@ -1,13 +1,7 @@
-import smtplib, ssl
-import os
+import streamlit as st
 
-def send_email_fung(user_message):
-    host = "smtp.gmail.com"
-    port = 465
-    username = "pythonwithabhi@gmail.com"
-    password = os.getenv("PASSWORD_for_app3")
-    receiver = "abktpass@gmail.com"
-    my_context = ssl.create_default_context()
-    with smtplib.SMTP_SSL(host, port, context=my_context) as server:
-        server.login(username, password)
-        server.sendmail(username, receiver, user_message)
+st.title("Contact Me")
+st.write("📧 Email: abhismega@gmail.com")
+st.write("💼 LinkedIn: https://www.linkedin.com/in/abhishekthorat-ai/")
+st.write("🐙 GitHub: https://github.com/abhiiscode")
+st.write("🐦 Twitter: https://x.com/Abhistwitts")
